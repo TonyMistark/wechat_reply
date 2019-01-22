@@ -135,10 +135,7 @@ def text_reply(msg):
 
 
 if __name__ == "__main__":
-    try:
-        itchat.auto_login()
-    except Exception as e:
-        print(f"{e}")
+    itchat.auto_login()
     friends = itchat.get_friends(update=True)[0:]
     itchat.run()
     #
