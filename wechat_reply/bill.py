@@ -135,7 +135,7 @@ def text_reply(msg):
 
 
 if __name__ == "__main__":
-    itchat.auto_login(enableCmdQR=True)
+    itchat.auto_login()
     friends = itchat.get_friends(update=True)[0:]
     itchat.run()
     #
